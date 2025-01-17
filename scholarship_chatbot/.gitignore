@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+rasa_env/
+
+# Rasa specific files
+*.db
+*.log
+*.rasa
+
+# Cache and temporary files
+*.cache
+*.tmp
+*.temp
+*.swp
+*.bak
+*.pid
+.DS_Store
+Thumbs.db
+
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+*.DS_Store
+*.vscode/
+.idea/
+*.iml
+
+# Node dependencies (if using any Node.js scripts)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs and debugging files
+logs/
+debug.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# OS generated files
+*.log
+*.lock

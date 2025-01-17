@@ -1,0 +1,107 @@
+version: "3.1"
+
+stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: User asks for scholarships
+  steps:
+    - intent: greet
+    - action: utter_ask_scholarships
+    - intent: receive_user_type
+    - action: utter_how_may_i_help
+
+- story: User asks for scholarship eligibility
+  steps:
+    - intent: ask_scholarships
+    - action: utter_many_available
+
+- story: User wants to apply for a scholarship
+  steps:
+    - intent: apply_scholarship
+    - action: utter_apply_scholarship
+
+
+- story: User asks how to apply
+  steps:
+    - intent: how to apply
+    - action: utter_ask_application_procedure
+
+- story: User asks about required documents
+  steps:
+    - intent: required documents
+    - action: utter_ask_required_documents
+
+
+- story: track application
+  steps:
+    - intent :  track application status
+    - action: utter_ask_application_status
+
+- story: User inquires about multiple applications
+  steps:
+    - intent : Multiple applications
+    - action: utter_ask_multiple_applications
+
+- story: User asks about correcting submission
+  steps:
+    - intent : correcting submissions
+    - action: utter_ask_correction
+
+- story: Kya haal chaal?
+  steps:
+    - user: "kaisa hai bhai?"
+    - action: utter_badiya_bhai
+    - user: "main bhi ekdum badiya hun"
+    - action: utter_theek_hai
+
+- story: Handle login issues
+  steps:
+    - intent: login_issue
+    - action: utter_login_help
+
+- story: Handle form submission problems
+  steps:
+    - intent: form_submission_issue
+    - action: utter_form_submission_help
+
+- story: Handle account management issues
+  steps:
+    - intent: account_issue
+    - action: utter_account_help
+
+- story: Handle system errors
+  steps:
+  - intent: system_error
+  - action: utter_system_error_help
+
+  
+- story: Provide support contact information  
+  steps:
+  - intent: support_contact
+  - action: utter_support_contact
