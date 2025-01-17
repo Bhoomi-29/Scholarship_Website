@@ -1,0 +1,193 @@
+version: "3.1"
+
+nlu:
+- intent: receive_user_type
+  examples : |
+    - [student](user_type)
+    - i am a [student](user_type)
+    - hello , i am a [student](user_type)
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: ask_scholarships
+  examples: |
+    - What scholarships are available?
+    - Tell me about the scholarships.
+    - Are there any scholarships I can apply for?
+
+- intent: apply_scholarship
+  examples: |
+    - How do I apply for a scholarship?
+    - Can I apply for a scholarship now?
+    - What are the steps to apply for a scholarship?
+
+- intent: ask_requirements
+  examples: |
+    - What are the requirements for a scholarship?
+    - What documents do I need?
+    - Do I need to meet any eligibility criteria?
+
+- intent: ask_deadline
+  examples: |
+    - What is the deadline for scholarship applications?
+    - When do I need to apply by?
+    - Can you tell me the application deadline?
+
+- intent: inquire_eligibility
+  examples: |
+    - Am I eligible for a scholarship?
+    - Can I apply for a scholarship if I am a student?
+    - Do I need to have a certain GPA for scholarships?
+- intent: how to apply
+  examples: |
+    - How to apply for scholarships?
+    - application procedure 
+    - application
+    - how to apply
+- intent: required documents
+  examples: |
+    - Which documents are required for scholarship registration?
+    - which documents?
+    - documents?
+    - required documents?
+- intent: track application status
+  examples : |
+    - how to track application status?
+    - application status?
+    - check application
+- intent: Multiple applications
+  examples : |
+    - can i apply for multiple scholarships?
+    - i am a student can i give multiple applications?
+    - are multiple applications allowed ?
+- intent: correcting submissions
+  examples : |
+    - can i correct my submissions ?
+    - can i make changes in my applications after submission?
+    - can i edit my application after submission?
+- intent: login_issue
+  examples: |
+    - I cannot log in
+    - My login is not working
+    - How do I reset my password?
+    - I forgot my login credentials
+
+- intent: form_submission_issue
+  examples: |
+    - The application form isn’t loading
+    - I can’t upload my documents
+    - How do I edit my application?
+    - My form submission failed
+
+- intent: account_issue
+  examples: |
+    - How do I create an account?
+    - I accidentally deleted my account
+    - Can I recover my account?
+
+- intent: system_error
+  examples: |
+    - I’m getting an error message
+    - The website is crashing
+    - Something went wrong on the page
+    - The system isn’t responding
+
+- intent: support_contact
+  examples: |
+    - How can I contact support?
+    - Is there a helpline for technical issues?
+    - I need technical assistance
+    - Can you give me the support email?
+
+- intent: thank_you
+  examples: |
+    - Thanks
+    - Thank you
+    - Appreciate your help
